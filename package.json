@@ -1,12 +1,12 @@
 {
-	"name": "reactfolio",
+	"name": "portfolio",
 	"version": "1.0",
 	"homepage": "https://ovidiu121.github.io/",
 	"description": "Personal portfolio",
 	"author": {
 		"name": "Ovidiu Dinica",
-		"email": " ",
-		"url": " "
+		"email": "ovidiu_121@yahoo.com",
+		"url": "https://ovidiu121.github.io/"
 	},
 	"license": "MIT",
 	"private": true,

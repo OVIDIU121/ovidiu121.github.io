@@ -4,12 +4,12 @@ import { Card, Row, Col } from 'react-bootstrap';
 const games = [
     {
         title: "Clicky Crates",
-        url: "https://i.simmer.io/@OvidiuDinica/clicky-crates",
+        url: "",
         description: "Select the desired difficulty of the game and gain points by clicking the crates. You lose points by clicking the skulls."
     },
     {
         title: "Jumping Farmer",
-        url: "https://i.simmer.io/@OvidiuDinica/jumpingfarmer",
+        url: "",
         description: "Jump over as many obstacles as possible to earn points, the game ends when you fail to jump over it!"
     },
 

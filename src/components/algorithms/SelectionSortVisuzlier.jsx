@@ -10,16 +10,6 @@ const SelectionSortVisualizer = () => {
   };
 
   const [array, setArray] = useState(generateRandomArray(50)); // Initial array with 10 random elements
-  const [sorting, setSorting] = useState(false); // Flag to indicate if sorting is in progress
-
-  const startSorting = async () => {
-    if (!sorting) {
-      setSorting(true); // Start sorting
-      await SelectionSort(array, setArray);
-      setSorting(false); // Stop sorting
-      setArray(generateRandomArray(60)); // Generate new random data
-    }
-  };
 
   return (
     <Row>

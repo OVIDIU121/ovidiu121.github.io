@@ -92,11 +92,6 @@
 	flex-basis: 600px;
 	padding-top: 30px;
 }
-.homepage-education {
-	flex-basis: 600px;
-	padding-top: 30px;
-	padding-left: 30px;
-}
 
 @media (max-width: 1024px) {
 	.homepage-first-area {

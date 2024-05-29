@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, Row, Col, CardText, CardTitle } from 'react-bootstrap';
+import {  Card, Row, Col, CardText, CardTitle } from 'react-bootstrap';
 import ArrayBars from './ArrayBars';
 import QuickSort from './QuickSort'; // Import QuickSort component
 import './SortingVisualizer.css';
@@ -10,16 +10,6 @@ const QuickSortVisualizer = () => {
   };
 
   const [array, setArray] = useState(generateRandomArray(50)); // Initial array with 50 random elements
-  const [sorting, setSorting] = useState(false); // Flag to indicate if sorting is in progress
-
-  const startSorting = async () => {
-    if (!sorting) {
-      setSorting(true); // Start sorting
-      await QuickSort(array, setArray); // Call QuickSort function directly
-      setSorting(false); // Stop sorting
-      setArray(generateRandomArray(60)); // Generate new random data
-    }
-  };
 
   return (
     <Row>

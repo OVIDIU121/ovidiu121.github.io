@@ -6,7 +6,7 @@ import './SortingVisualizer.css';
 
 const SelectionSort = ({ array, setArray }) => {
   const [sorting, setSorting] = useState(false); // Flag to indicate if sorting is in progress
-  const [sorted, setSorted] = useState(false);
+  const [sorted] = useState(false);
   
   const selectionSort = async () => {
     const n = array.length;
