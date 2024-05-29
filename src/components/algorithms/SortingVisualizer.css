@@ -1,0 +1,74 @@
+/* BubbleSortVisualizer.css */
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+  }
+  
+  .array-bar {
+    width: 15px;
+    margin: 0 1px;
+    background-color: #007bff; /* Blue color for bars */
+    transition: height 0.3s; /* Smooth transition for height changes */
+  }
+  
+  .text-success {
+    font-weight: bold;
+    color: green; /* Green color for sorted text */
+  }
+  
+  /* Add this CSS to your SortingVisualizer.css file */
+
+.card {
+  max-width: 900px; /* Adjust max-width as needed */
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: #f8f9fa; /* Light gray background for the header */
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button {
+  background-color: #f8f9fa; /* Very light gray */
+  color: #333; /* Dark gray text color */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 12px 24px; /* Added padding */
+  font-size: 18px;
+  border-radius: 20px; /* More rounded border */
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #e9ecef; /* Light gray on hover */
+  border-color: #adb5bd; /* Slightly darker border on hover */
+  color: #212529; /* Darker text color on hover */
+}
+
+
+
+
+.start-button.sorted:hover {
+  background-color: #218838; /* Darken the success color on hover */
+}
+
