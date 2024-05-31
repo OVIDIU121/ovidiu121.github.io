@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Helmet , HelmetProvider} from "react-helmet-async";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
@@ -19,6 +19,10 @@ import SEO from "../data/seo";
 import "./styles/homepage.css";
 
 const Homepage = () => {
+
+	useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
@@ -53,18 +57,6 @@ const Homepage = () => {
 
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
-								</div>
-							</div>
-
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-										<img
-											src="homepage.jpg"
-											alt="about"
-											className="homepage-image"
-										/>
-									</div>
 								</div>
 							</div>
 						</div>
