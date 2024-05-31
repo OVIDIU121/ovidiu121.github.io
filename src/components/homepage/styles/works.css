@@ -42,3 +42,25 @@
 	text-align: right;
 	color: var(--tertiary-color);
 }
+
+@media (max-width: 600px) {
+	.works-body {
+		margin-bottom: 10px;
+	}
+	
+	.work {
+		display: flex;
+		padding-bottom: 40px;
+		width: 100%;
+	}
+
+	.work-duration {
+		position: absolute;
+		width: 300px;
+		font-size: 12px;
+		padding-top: 20px;
+		text-align: right;
+		color: var(--tertiary-color);
+	}
+
+}

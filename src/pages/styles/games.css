@@ -1,10 +1,10 @@
-.algorithms-logo-container {
+.games-logo-container {
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
 }
 
-.algorithms-logo {
+.games-logo {
 	display: flex;
 	position: fixed;
 	border: 1px solid white;
@@ -14,7 +14,7 @@
 	z-index: 999;
 }
 
-.algorithms-container {
+.games-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -23,19 +23,19 @@
 }
 
 @media (max-width: 600px) {
-	.algorithms-container {
+	.games-container {
 		padding-top: 60px;
 	}
 
-	.algorithms-project {
+	.games-project {
 		width: calc(100% / 2);
 	}
-	.algorithms-logo-container {
+	.games-logo-container {
 		display: flex;
 		justify-content: left;
 		padding-top: 90px;
 	}
-	.algorithms-logo {
+	.games-logo {
 		display: flex;
 		position: fixed;
 		border: 1px solid white;

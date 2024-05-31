@@ -12,7 +12,6 @@ const games = [
         url: "",
         description: "Jump over as many obstacles as possible to earn points, the game ends when you fail to jump over it!"
     },
-
     // Add more games here if needed
 ];
 
@@ -24,9 +23,9 @@ const GamesList = () => {
     };
 
     return (
-        <Row>
+        <Row xs={1} sm={2} md={2} lg={2} xl={2} xxl={3} className="g-4">
             {games.map((game, index) => (
-                <Col key={index} md={12} lg={6} className="mb-4">
+                <Col key={index} className="mb-4">
                     <Card className="h-100">
                         <Card.Body>
                             <Card.Title className="text-center">{game.title}</Card.Title>
@@ -39,14 +38,13 @@ const GamesList = () => {
                                     width="100%"
                                     height="600px"
                                     frameBorder=""
-                                    allow="fullscreen; accelerometer; gyroscope; vr"
                                     allowFullScreen
                                 ></iframe>
                             ) : (
                                 <img
                                     src={`https://via.placeholder.com/600x400?text=${game.title}`}
                                     alt={game.title}
-                                    style={{ cursor: 'pointer' }}
+                                    style={{ cursor: 'pointer', maxWidth: '100%', maxHeight: '100%' }}
                                     onClick={() => handleGameClick(index)}
                                 />
                             )}

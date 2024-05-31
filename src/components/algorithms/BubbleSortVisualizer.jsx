@@ -18,7 +18,7 @@ const BubbleSortVisualizer = () => {
   return (
     <Row>
       <Col>
-        <Card style={{ width: '900px', height: '700px' }} className="text-center mx-auto my-4">
+        <Card className="text-center mx-auto my-4">
           <Card.Header>
             <CardTitle>
             Bubble Sort Visualization

@@ -17,6 +17,10 @@
 
 @media (max-width: 600px) {
 	.all-projects-project {
-		width: calc(100% / 2);
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px;
+		overflow: hidden;
 	}
 }
+

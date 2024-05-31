@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet , HelmetProvider} from "react-helmet-async";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -7,7 +7,8 @@ import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import "./styles/algorithms.css";
+import "./styles/games.css";
+
 
 import GamesList from "../components/games/GamesList"; // Assuming you have a GamesList component
 
@@ -20,35 +21,37 @@ const GamesPage = () => {
 
     return (
         <React.Fragment>
-            <Helmet>
-                <title>{`Games | ${INFO.main.title}`}</title>
-                <meta name="description" content={currentSEO.description} />
-                <meta
-                    name="keywords"
-                    content={currentSEO.keywords.join(", ")}
-                />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <title>{`Games | ${INFO.main.title}`}</title>
+                    <meta name="description" content={currentSEO.description} />
+                    <meta
+                        name="keywords"
+                        content={currentSEO.keywords.join(", ")}
+                    />
+                </Helmet>
+            </HelmetProvider>
 
             <div className="page-content">
                 <NavBar active="games" />
                 <div className="content-wrapper">
-                    <div className="algorithms-logo-container">
-                        <div className="algorithms-logo">
+                    <div className="games-logo-container">
+                        <div className="games-logo">
                             <Logo width={46} />
                         </div>
                     </div>
-                    <div className="algorithms-container">
-                        <div className="title algorithms-title">
+                    <div className="games-container">
+                        <div className="title games-title">
                             Games Developed with Unity
                         </div>
 
-                        <div className="subtitle algorithms-subtitle">
+                        <div className="subtitle games-subtitle">
                             Check out these games developed with Unity.
                         </div>
 
                         <br />
 
-                        <div className="algorithms-list">
+                        <div className="games-list">
                             <GamesList />
                         </div>
                     </div>

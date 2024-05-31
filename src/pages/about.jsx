@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -20,14 +20,16 @@ const About = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<title>{`About | ${INFO.main.title}`}</title>
+					<meta name="description" content={currentSEO.description} />
+					<meta
+						name="keywords"
+						content={currentSEO.keywords.join(", ")}
+					/>
+				</Helmet>
+			</HelmetProvider>
 
 			<div className="page-content">
 				<NavBar active="about" />

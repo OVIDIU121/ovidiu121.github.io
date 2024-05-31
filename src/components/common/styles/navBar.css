@@ -94,20 +94,27 @@
   
 
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
 	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
+		position: fixed;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 10px; /* Add padding to avoid edge-to-edge */
 	}
 
 	.nav-background {
-		width: 80%;
+		width: 100%; /* Make background full width */
 		height: 40px;
 	}
 
+	.nav-list {
+		margin-top: 5px; /* Adjust margin for better spacing */
+	}
+
 	.nav-item {
-		font-weight: bold;
+		margin-left: 8px;
+		margin-right: 8px;
+		margin-top: 5px;
+		font-size: 75%; /* Decrease font size for better visibility */
 	}
 }

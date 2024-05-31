@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet ,HelmetProvider} from "react-helmet-async";
 import styled from "styled-components";
 
 import NavBar from "../components/common/navBar";
@@ -30,11 +30,13 @@ const ReadArticle = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<title>{`${article().title} | ${INFO.main.title}`}</title>
+					<meta name="description" content={article().description} />
+					<meta name="keywords" content={article().keywords.join(", ")} />
+				</Helmet>
+			</HelmetProvider>
 
 			<div className="page-content">
 				<NavBar />
